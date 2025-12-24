@@ -5,6 +5,28 @@
 {% endblock %}
 
 {% block content %}
-    <h1>Welcome to the Index Page</h1>
-    <p>This is the main landing page of the application.</p>
+    <header>
+        <h1>Welcome to our website</h1>
+        <p>Basic application developed with Flask and Python</p>
+        <hr>
+        <nav>
+            <ul>
+                <li><a class="button" href="{{ url_for('home') }}">Home</a></li>
+                <li><a class="button" href="{{ url_for('about') }}">About</a></li>
+                <li><a class="button" href="{{ url_for('form') }}">Form</a></li>
+                <li><a class="button" href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <h2>Application Objective</h2>
+            <p>Demonstrate a simple web application with multiple routes and model reuse.</p>
+            <img class="img" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fkinsta.com%2Fwp-content%2Fuploads%2F2023%2F05%2Fflask-logo.png&f=1&nofb=1&ipt=312b442bec46b3d811f1775ac6e10c0eabb6c50f88f2131c8c2147e5474dcfba" alt="flask">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 DevHs. todos os direitos reservados.</p>
+    </footer>
 {% endblock %}

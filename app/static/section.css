@@ -1,0 +1,30 @@
+.section {
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-form {
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.j-RUn4TPBV1OWmepjwPDCQHaEK%3Fpid%3DApi&f=1&ipt=088f35079c9ee64dacf5b9bbe8d879c37e72921dcc92d21a097ed0e27a3019f7');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 30%;
+    padding: 50px;    
+}
+
+.section-contact {
+    text-align: justify;
+    background-image: url('https://img.freepik.com/vetores-premium/tecnologia-de-fundo-no-conceito-de-rede-de-dados_49459-555.jpg');
+}
+
+.section-contact ul {
+    list-style: none;
+    padding: 0;    
+}

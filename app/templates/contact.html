@@ -5,10 +5,29 @@
 {% endblock %}
 
 {% block content %}
-    <h1>Contact Information</h1>
-    <p>If you have any questions, please reach out to us!</p>
-    <ul>
-        <li>Name: {{ name }}</li>
-        <li>Email: {{ email }}</li>
-    </ul>
+    <header>
+        <h1>Contact Information</h1>
+        <hr>
+        <nav>
+            <ul>
+                <li><a class="button" href="{{ url_for('home') }}">Home</a></li>
+                <li><a class="button" href="{{ url_for('about') }}">About</a></li>
+                <li><a class="button" href="{{ url_for('form') }}">Form</a></li>
+                <li><a class="button" href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section section-form section-contact">
+            <ul>
+                <li>Name: {{ name }}</li>
+                <li>Email: {{ email }}</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 DevHs. todos os direitos reservados.</p>
+    </footer>
 {% endblock %}
+

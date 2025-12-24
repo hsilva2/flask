@@ -1,0 +1,14 @@
+.inputs {
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+}
+#name {
+    margin-bottom: 15px;
+}
+#email {
+    margin-bottom: 15px;
+}

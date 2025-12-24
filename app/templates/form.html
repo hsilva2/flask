@@ -1,18 +1,43 @@
 {% extends "base.html" %}
 
 {% block title %}
-    form
+    form Contact
 {% endblock %}
 
 {% block content %}
-    <h1>Form Submission</h1>
-    <form method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <br>
-        <button type="submit">Submit</button>
-    </form>
+    <header>
+        <h1>Form Submission</h1>
+        <p>This form sends the data entered in the fields below to the contact page.</p>
+        <hr>
+        <nav>
+            <ul>
+                <li><a class="button" href="{{ url_for('home') }}">Home</a></li>
+                <li><a class="button" href="{{ url_for('about') }}">About</a></li>
+                <li><a class="button" href="{{ url_for('form') }}">Form</a></li>
+                <li><a class="button" href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section section-form">
+            <form method="POST">
+                <label for="name">Name:</label>
+                <input class="inputs" type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input class="inputs" type="email" id="email" name="email" required>
+                <br>
+                <button class="button btn-form button-animated" type="submit">
+                    <span class="text-normal">Submit</span>
+                    <span class="text-hover">Submit 🚀</span>
+                </button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 DevHs. todos os direitos reservados.</p>
+    </footer>
 {% endblock %}
+
+

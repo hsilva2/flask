@@ -5,6 +5,28 @@
 {% endblock %}
 
 {% block content %}
-    <h1>About Our Application</h1>
-    <p>This application is built using Flask and demonstrates basic web development concepts.</p>
+    <header>
+        <h1>About the application</h1>
+        <p>This application was developed to demonstrate how simple it is to build a basic, organized, and even escalable website using Flask.</p>
+        <hr>
+        <nav>
+            <ul>
+                <li><a class="button" href="{{ url_for('home') }}">Home</a></li>
+                <li><a class="button" href="{{ url_for('about') }}">About</a></li>
+                <li><a class="button" href="{{ url_for('form') }}">Form</a></li>
+                <li><a class="button" href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <h2>About Our Application</h2>
+            <p>The application built demonstrates basic web development concepts such as: structuring the project with separation of responsibilities, reusing a base model, styling with CSS, simple animations in button elements, image insertion, form for receiving and sending data, among others.</p>
+            <img class="img" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbyspel.com%2Fwp-content%2Fuploads%2F2023%2F04%2FFlask-Framework-Python-Byspel-Tech-1024x480.jpg&f=1&nofb=1&ipt=0792bb89d3a7dc61d556033cef6c7ea5ccd49e46418929d00c52ed89c376eef8" alt="flask">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 DevHs. todos os direitos reservados.</p>
+    </footer>
 {% endblock %}
