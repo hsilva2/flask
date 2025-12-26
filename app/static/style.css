@@ -29,3 +29,15 @@ main {
 footer {
     text-align: center;
 }   
+
+@media screen and (max-width: 768px) {
+    header nav ul {
+    flex-direction: column;
+}
+header nav ul li {
+    margin-bottom: 10px;
+}
+    header nav ul li a{
+        width: 80%;
+    }
+}
